@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Jaraguá do Sul{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Jaraguá do Sul</h1>
+        <nav>
+            <a href="{% url 'index' %}">Início</a>
+            <a href="{% url 'atracoes' %}">Atrações</a>
+            <a href="{% url 'historia' %}">História</a>
+            <a href="{% url 'cultura' %}">Cultura</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2025 - Tiago & Gabriel</p>
+    </footer>
+</body>
+</html>
