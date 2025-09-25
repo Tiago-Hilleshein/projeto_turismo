@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: red;
+    color: black;
 }
 
 header {
@@ -46,17 +46,17 @@ footer {
 }
 
 .padrao-img {
-    max-width: 640px;
-    max-height: 320px;
-    width: 100%;       
-    height: auto;      
+    max-width: 50%;
+    max-height: auto;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 10px auto;
 }
 
 .topico {
     font-weight: bold;
-    color: red;
+    color: black;
 }
 
 html, body {
