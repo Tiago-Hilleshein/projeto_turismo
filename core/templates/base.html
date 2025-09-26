@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+    
     <header>
-        <h1>Jaraguá do Sul</h1>
+        <h1 class="titulo-animado">Jaraguá do Sul</h1>
         <nav>
-            <a href="{% url 'index' %}">Início</a>
-            <a href="{% url 'atracoes' %}">Atrações</a>
-            <a href="{% url 'historia' %}">História</a>
-            <a href="{% url 'cultura' %}">Cultura</a>
+            <a href="{% url 'index' %}" class="nav-link">Início</a>
+            <a href="{% url 'atracoes' %}" class="nav-link">Atrações</a>
+            <a href="{% url 'historia' %}" class="nav-link">História</a>
+            <a href="{% url 'cultura' %}" class="nav-link">Cultura</a>
         </nav>
     </header>
     <main>
@@ -22,5 +23,7 @@
     <footer>
         <p> 2025 - Tiago & Gabriel</p>
     </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

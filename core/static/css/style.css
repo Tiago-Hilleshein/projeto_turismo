@@ -67,6 +67,36 @@ footer {
     padding-left: 30px;
 }
 
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.mouse-sob-link {
+    transform: scale(1.2);
+}
+
+.letra-titulo {
+    display: inline-block;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: default;
+    transform-origin: center bottom; /* Faz a escala animar da base */
+}
+
+.espaco {
+    display: inline-block;
+    width: 0.3em;
+}
+
+/* Opcional: Adicionar um leve efeito de profundidade */
+.letra-titulo:hover {
+    transform: scale(1.8);
+    z-index: 10;
+    position: relative;
+}
+
+
 html, body {
     height: 100%;
     margin: 0;
