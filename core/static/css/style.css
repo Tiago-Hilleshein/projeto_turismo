@@ -37,13 +37,21 @@ footer {
     bottom: 0;
 }
 
+li {
+    display: flex;
+    flex-direction: column;
+}
+
 .titulo-centralizado {
     text-align: center;
 }
 
 .texto-justificado {
-    text-align: justify;
+    text-align: left;
+    padding-left: 80px;
+    padding-right: 80px;
 }
+
 
 .padrao-img {
     max-width: 50%;
@@ -59,9 +67,9 @@ footer {
     color: black;
 }
 
-.margem {
-    padding-left: 80px;
-    padding-right: 80px;
+.topico-texto {
+    text-align: left;
+    padding: 20%;
 }
 
 html, body {
